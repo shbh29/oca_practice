@@ -1,0 +1,18 @@
+package exception.check; 
+import java.io.IOException;
+
+
+public class ExceptionCheck extends ThrownException {
+	public void overriding() {
+		System.out.println("No Risk in Overriding method");
+	}
+       	public static void main(String ... args){
+		new ExceptionCheck().overriding();
+	}
+}
+
+class ThrowException {
+	public void overriding() throws IOException{
+		throw new IOException("Purposfully thrown");
+	}
+}
