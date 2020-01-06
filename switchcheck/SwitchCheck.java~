@@ -1,0 +1,12 @@
+package switchcheck;
+
+class SwitchCheck {
+	public static void main(String ...args) {
+		int ch = 0;
+		switch (ch) {
+			case 0: System.out.println("before BReak"); break; System.out.println("After BReak");
+			default: System.out.println("Default");
+		}
+		
+	}
+}
